@@ -1,0 +1,24 @@
+.Container {
+  border-top: 1px solid rgb(218, 227, 235);
+  border-bottom: 1px solid rgb(218, 227, 235);
+}
+
+.List {
+    display: flex;
+    gap: 25px;
+}
+
+.Img {
+width: 250px;
+}
+
+.List-item {
+    height: 40px;
+    display: flex;
+    gap: 3px;
+    align-items: end;
+}
+
+hr {
+    width:600px;
+}
