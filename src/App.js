@@ -1,17 +1,21 @@
+import React, { useState } from "react";
 import "./App.css";
 import GithubData from "./components/githubData/GithubData";
-import RepoData from "./components/repoData/RepoData";
 import UserInfo from "./components/users/UserInfo";
 
 function App() {
-
+  const [userInfoVisible, setUserInfoVisible] = useState(false);
 
   return (
     <div className="App">
-     
-      <GithubData />
-      <RepoData />
-      <UserInfo />
+      {userInfoVisible ? (
+        <UserInfo setUserInfoVisible={setUserInfoVisible} />
+      ) : (
+        <>
+          <UserInfo setUserInfoVisible={setUserInfoVisible} />
+          <GithubData />
+        </>
+      )}
     </div>
   );
 }

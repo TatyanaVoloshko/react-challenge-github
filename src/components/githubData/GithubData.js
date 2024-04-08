@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { getGithubData } from "../../api/githubDataApi";
+import RepoData from '../repoData/RepoData'
 import "./GithubData.css"
 
 export default function GithubData() {
@@ -53,6 +54,7 @@ export default function GithubData() {
           </li>
         ))}
       </ul>
+    <RepoData />
     </div>
   );
 }
